@@ -1,0 +1,4 @@
+cat("Objects in memory:\n")
+print(ls())
+cat("\nMemory usage:\n")
+print(gc())
