@@ -1,0 +1,5 @@
+set.seed(123)  # Set seed for reproducibility
+random_numbers <- rnorm(100, mean = 0, sd = 1)
+
+# Count occurrences
+table(round(random_numbers, 1))
