@@ -1,0 +1,6 @@
+first_10 <- letters[1:10]
+print(first_10)
+last_10 <- LETTERS[17:26]
+print(last_10)
+subset_letters <- LETTERS[22:24]
+print(subset_letters)
