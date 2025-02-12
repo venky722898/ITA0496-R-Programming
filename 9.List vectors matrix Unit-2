@@ -1,0 +1,10 @@
+# Defining components
+vec <- c(1, 2, 3)
+mat <- matrix(1:4, nrow = 2)
+func <- function(x) x^2
+
+# Creating a list
+my_list <- list(Vector = vec, Matrix = mat, Function = func)
+
+# Printing list contents
+print(my_list)
