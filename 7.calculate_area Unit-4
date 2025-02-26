@@ -1,0 +1,4 @@
+rectangles <- expand.grid(length = 1:10, width = 1:10)
+rectangles$area <- mapply(calculate_area, rectangles$length, rectangles$width)
+plot(rectangles$length, rectangles$width, col = "blue", pch = 19, 
+     xlab = "Length", ylab = "Width", main = "Rectangle Areas")
