@@ -1,0 +1,6 @@
+data("airquality")
+is_data_frame <- is.data.frame(airquality)
+print(is_data_frame)
+ordered_airquality <- airquality[order(airquality$Ozone, airquality$Solar.R), ]
+airquality_clean <- airquality[, !(names(airquality) %in% c('Solar.R', 'Wind'))]
+print(airquality_clean)
