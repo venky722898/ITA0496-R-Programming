@@ -1,0 +1,5 @@
+Q1 <- quantile(iris$Sepal.Width, 0.25)
+Q3 <- quantile(iris$Sepal.Width, 0.75)
+
+cat("First Quartile (Q1):", Q1, "\n")
+cat("Third Quartile (Q3):", Q3, "\n")
