@@ -1,0 +1,9 @@
+data(ChickWeight)
+std_dev_weight <- sd(ChickWeight$weight)
+cat("Standard Deviation of chicken weights:", std_dev_weight, "\n")
+table(ChickWeight$Sex)  # This assumes 'Sex' column exists, or modify as necessary
+heaviest_chicken <- ChickWeight[which.max(ChickWeight$weight), ]
+cat("Heaviest chicken:", heaviest_chicken$weight, "at age", heaviest_chicken$Time, "\n")
+age_groups <- table(ChickWeight$Time)
+cat("Number of chickens in each age group:", "\n")
+print(age_groups)
