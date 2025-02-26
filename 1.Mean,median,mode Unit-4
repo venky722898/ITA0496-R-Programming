@@ -1,0 +1,12 @@
+data(mtcars)
+mean_mpg <- mean(mtcars$mpg)
+median_mpg <- median(mtcars$mpg)
+getmode <- function(v) {
+  uniqv <- unique(v)
+  uniqv[which.max(tabulate(match(v, uniqv)))]
+}
+
+mode_mpg <- getmode(mtcars$mpg)
+cat("Mean of mpg:", mean_mpg, "\n")
+cat("Median of mpg:", median_mpg, "\n")
+cat("Mode of mpg:", mode_mpg, "\n")
